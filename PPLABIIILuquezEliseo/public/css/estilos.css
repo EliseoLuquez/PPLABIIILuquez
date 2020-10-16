@@ -1,0 +1,130 @@
+h2{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+#divTabla
+{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#divTabla tr > *:nth-child(1) {
+    display: none;
+}
+
+#divTabla th, tr, td
+{
+    border-collapse: collapse;
+    text-align: left;
+    padding: 10px;
+    justify-content: center;
+}
+
+th{
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+#spinner
+{
+    position: flex;
+    opacity: 0.5;
+}
+
+.overlay
+{
+    background: rgb(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active
+{
+    visibility: visible;
+}
+
+#formDatos
+{
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .3);
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+#divDatos
+{
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#btnCerrar
+{
+    background-color: red;
+    color: white;
+    border-radius:3px;
+    padding: 5px 10px;
+    border: none;
+}
+
+#nombretxt, #cuatrimestretxt, #fechaFinaltxt{
+    width: 100%;
+    margin: 8px;
+    border-radius: 4px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+input[type=button] {  
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+  }
+
+#botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+#btnModificar{
+    margin: 8px 0;
+    background-color: #4CAF50;
+    padding: 12px 32px;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#btnEliminar{
+    margin: 8px 0;
+    background-color: red;
+    padding: 12px 32px;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}

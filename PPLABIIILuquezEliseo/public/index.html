@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/materia.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Lista de Materias</h1>
+    <div>  
+        <div id="divTabla">
+        </div>
+        <div id="spinner">
+            <img src="./img/loading.gif" alt="">
+        </div>
+    </div>  
+        <div class="overlay" id="overlay">
+            <form id="formDatos" action="#" class="frm">
+                <fieldset>
+                    <div id="divDatos">
+                        <div class="btnCerrar">
+                            <input type="button" id="btnCerrar" value="X">
+                        </div>
+                        <div hidden=true>
+                            <label for="txtID">Id</label>
+                            <input id="txtId" type="text" name='id'>
+                        </div>
+
+                        <label for="nombretxt">Nombre</label>
+                        <input id="nombretxt" type="text" name='nombre' minlength="6" required>
+
+                        <label for="cuatrimestretxt">Cuatrimestre</label>
+                        <select id="cuatrimestretxt" name="cuatrimestre" disabled>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+
+                        <label for="fechaFinaltxt">Fecha Final</label>
+                        <input id="fechaFinaltxt" type="text" name='fechaFinal' required>
+
+                        <label for='turno' name='turno'>Turno
+                            <label class="radio-inline" for="Mañana">
+                                <input class="form-check-inline" type="radio" id="Mañana" name="turno">Mañana
+                            </label>
+                            <label class="radio-inline" for="Noche">
+                                <input class="form-check-inline" type="radio" id="Noche" name="turno">Noche
+                            </label>
+                        </label>
+
+                        <div class="botones">
+                            <input id="btnEliminar" type="button" value="Eliminar">
+                            <input id="btnModificar" type="button" value="Modificar">
+                        </div>
+                    </div>
+        </div>
+        </fieldset>
+        </form>
+        </div>
+
+</body>
+
+</html>
