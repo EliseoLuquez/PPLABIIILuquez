@@ -299,7 +299,7 @@ function ValidarFechaFinal()
     fechaValida.setHours(0,0,0,0);
     fechaHoy.setHours(0,0,0,0);
 
-    if(fechaValida < fechaHoy)
+    if(fechaValida > fechaHoy)
     {
         retorno = true;
     }
